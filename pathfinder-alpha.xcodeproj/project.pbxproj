@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
+		A0C2804D1D012547008D2DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* ViewController.swift */; };
+		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
+		A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */; };
+		A0C280551D012547008D2DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C280541D012547008D2DF9 /* Assets.xcassets */; };
+		A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */; };
+		A0C280631D012547008D2DF9 /* pathfinder_alphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C280621D012547008D2DF9 /* pathfinder_alphaTests.swift */; };
+		A0C2806E1D012547008D2DF9 /* pathfinder_alphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0C2805F1D012547008D2DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C2803F1D012547008D2DF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C280461D012547008D2DF9;
+			remoteInfo = "pathfinder-alpha";
+		};
+		A0C2806A1D012547008D2DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0C2803F1D012547008D2DF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0C280461D012547008D2DF9;
+			remoteInfo = "pathfinder-alpha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0C2804C1D012547008D2DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0C2804F1D012547008D2DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0C280521D012547008D2DF9 /* pathfinder_alpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pathfinder_alpha.xcdatamodel; sourceTree = "<group>"; };
+		A0C280541D012547008D2DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0C280571D012547008D2DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0C280591D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C2805E1D012547008D2DF9 /* pathfinder-alphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C280621D012547008D2DF9 /* pathfinder_alphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaTests.swift; sourceTree = "<group>"; };
+		A0C280641D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaUITests.swift; sourceTree = "<group>"; };
+		A0C2806F1D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0C280441D012547008D2DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2805B1D012547008D2DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C280661D012547008D2DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0C2803E1D012547008D2DF9 = {
+			isa = PBXGroup;
+			children = (
+				A0C280491D012547008D2DF9 /* pathfinder-alpha */,
+				A0C280611D012547008D2DF9 /* pathfinder-alphaTests */,
+				A0C2806C1D012547008D2DF9 /* pathfinder-alphaUITests */,
+				A0C280481D012547008D2DF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0C280481D012547008D2DF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0C280471D012547008D2DF9 /* pathfinder-alpha.app */,
+				A0C2805E1D012547008D2DF9 /* pathfinder-alphaTests.xctest */,
+				A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0C280491D012547008D2DF9 /* pathfinder-alpha */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
+				A0C2804C1D012547008D2DF9 /* ViewController.swift */,
+				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
+				A0C280541D012547008D2DF9 /* Assets.xcassets */,
+				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,
+				A0C280591D012547008D2DF9 /* Info.plist */,
+				A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */,
+			);
+			path = "pathfinder-alpha";
+			sourceTree = "<group>";
+		};
+		A0C280611D012547008D2DF9 /* pathfinder-alphaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0C280621D012547008D2DF9 /* pathfinder_alphaTests.swift */,
+				A0C280641D012547008D2DF9 /* Info.plist */,
+			);
+			path = "pathfinder-alphaTests";
+			sourceTree = "<group>";
+		};
+		A0C2806C1D012547008D2DF9 /* pathfinder-alphaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */,
+				A0C2806F1D012547008D2DF9 /* Info.plist */,
+			);
+			path = "pathfinder-alphaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0C280461D012547008D2DF9 /* pathfinder-alpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C280721D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alpha" */;
+			buildPhases = (
+				A0C280431D012547008D2DF9 /* Sources */,
+				A0C280441D012547008D2DF9 /* Frameworks */,
+				A0C280451D012547008D2DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pathfinder-alpha";
+			productName = "pathfinder-alpha";
+			productReference = A0C280471D012547008D2DF9 /* pathfinder-alpha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0C2805D1D012547008D2DF9 /* pathfinder-alphaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C280751D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaTests" */;
+			buildPhases = (
+				A0C2805A1D012547008D2DF9 /* Sources */,
+				A0C2805B1D012547008D2DF9 /* Frameworks */,
+				A0C2805C1D012547008D2DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0C280601D012547008D2DF9 /* PBXTargetDependency */,
+			);
+			name = "pathfinder-alphaTests";
+			productName = "pathfinder-alphaTests";
+			productReference = A0C2805E1D012547008D2DF9 /* pathfinder-alphaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0C280681D012547008D2DF9 /* pathfinder-alphaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0C280781D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaUITests" */;
+			buildPhases = (
+				A0C280651D012547008D2DF9 /* Sources */,
+				A0C280661D012547008D2DF9 /* Frameworks */,
+				A0C280671D012547008D2DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0C2806B1D012547008D2DF9 /* PBXTargetDependency */,
+			);
+			name = "pathfinder-alphaUITests";
+			productName = "pathfinder-alphaUITests";
+			productReference = A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0C2803F1D012547008D2DF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Adrian Padua";
+				TargetAttributes = {
+					A0C280461D012547008D2DF9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A0C2805D1D012547008D2DF9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A0C280461D012547008D2DF9;
+					};
+					A0C280681D012547008D2DF9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A0C280461D012547008D2DF9;
+					};
+				};
+			};
+			buildConfigurationList = A0C280421D012547008D2DF9 /* Build configuration list for PBXProject "pathfinder-alpha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0C2803E1D012547008D2DF9;
+			productRefGroup = A0C280481D012547008D2DF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0C280461D012547008D2DF9 /* pathfinder-alpha */,
+				A0C2805D1D012547008D2DF9 /* pathfinder-alphaTests */,
+				A0C280681D012547008D2DF9 /* pathfinder-alphaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0C280451D012547008D2DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */,
+				A0C280551D012547008D2DF9 /* Assets.xcassets in Resources */,
+				A0C280501D012547008D2DF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2805C1D012547008D2DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C280671D012547008D2DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0C280431D012547008D2DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
+				A0C2804D1D012547008D2DF9 /* ViewController.swift in Sources */,
+				A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C2805A1D012547008D2DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C280631D012547008D2DF9 /* pathfinder_alphaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C280651D012547008D2DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0C2806E1D012547008D2DF9 /* pathfinder_alphaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0C280601D012547008D2DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C280461D012547008D2DF9 /* pathfinder-alpha */;
+			targetProxy = A0C2805F1D012547008D2DF9 /* PBXContainerItemProxy */;
+		};
+		A0C2806B1D012547008D2DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0C280461D012547008D2DF9 /* pathfinder-alpha */;
+			targetProxy = A0C2806A1D012547008D2DF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0C2804E1D012547008D2DF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0C2804F1D012547008D2DF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0C280571D012547008D2DF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0C280701D012547008D2DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0C280711D012547008D2DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0C280731D012547008D2DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "pathfinder-alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0C280741D012547008D2DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "pathfinder-alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A0C280761D012547008D2DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pathfinder-alphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pathfinder-alpha.app/pathfinder-alpha";
+			};
+			name = Debug;
+		};
+		A0C280771D012547008D2DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "pathfinder-alphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pathfinder-alpha.app/pathfinder-alpha";
+			};
+			name = Release;
+		};
+		A0C280791D012547008D2DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "pathfinder-alphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "pathfinder-alpha";
+			};
+			name = Debug;
+		};
+		A0C2807A1D012547008D2DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "pathfinder-alphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "pathfinder-alpha";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0C280421D012547008D2DF9 /* Build configuration list for PBXProject "pathfinder-alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C280701D012547008D2DF9 /* Debug */,
+				A0C280711D012547008D2DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0C280721D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C280731D012547008D2DF9 /* Debug */,
+				A0C280741D012547008D2DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0C280751D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C280761D012547008D2DF9 /* Debug */,
+				A0C280771D012547008D2DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0C280781D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0C280791D012547008D2DF9 /* Debug */,
+				A0C2807A1D012547008D2DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A0C280521D012547008D2DF9 /* pathfinder_alpha.xcdatamodel */,
+			);
+			currentVersion = A0C280521D012547008D2DF9 /* pathfinder_alpha.xcdatamodel */;
+			path = pathfinder_alpha.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A0C2803F1D012547008D2DF9 /* Project object */;
+}
