@@ -10,7 +10,7 @@
 		2B192742CB268E5B9D14D02A /* Pods_pathfinder_alphaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */; };
 		9FCCBDE52558F7B6C2CF0EB4 /* Pods_pathfinder_alphaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
-		A0C2804D1D012547008D2DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* ViewController.swift */; };
+		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
 		A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */; };
 		A0C280551D012547008D2DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C280541D012547008D2DF9 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0C2804C1D012547008D2DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		A0C2804F1D012547008D2DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0C280521D012547008D2DF9 /* pathfinder_alpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pathfinder_alpha.xcdatamodel; sourceTree = "<group>"; };
 		A0C280541D012547008D2DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +101,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A06DD0021D056FBF00DD8948 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2804C1D012547008D2DF9 /* StartVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A06DD0031D056FEC00DD8948 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A06DD0041D056FF100DD8948 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		A0C2803E1D012547008D2DF9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +148,10 @@
 		A0C280491D012547008D2DF9 /* pathfinder-alpha */ = {
 			isa = PBXGroup;
 			children = (
+				A06DD0041D056FF100DD8948 /* Model */,
+				A06DD0031D056FEC00DD8948 /* View */,
+				A06DD0021D056FBF00DD8948 /* Controller */,
 				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
-				A0C2804C1D012547008D2DF9 /* ViewController.swift */,
 				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
 				A0C280541D012547008D2DF9 /* Assets.xcassets */,
 				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,
@@ -431,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
-				A0C2804D1D012547008D2DF9 /* ViewController.swift in Sources */,
+				A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */,
 				A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
