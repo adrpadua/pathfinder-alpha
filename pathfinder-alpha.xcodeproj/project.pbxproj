@@ -13,6 +13,10 @@
 		A02AF8061D05F3CD002F724B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8031D05F3CD002F724B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A02AF8071D05F3CD002F724B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; };
 		A02AF8081D05F3CD002F724B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */; };
+		A033F2AB1D05F75B00F1A031 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AA1D05F75B00F1A031 /* Global.swift */; };
+		A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */; };
+		A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AE1D05FA7C00F1A031 /* Manager.swift */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -64,6 +68,10 @@
 		8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A02AF8031D05F3CD002F724B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A02AF8041D05F3CD002F724B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
+		A033F2AA1D05F75B00F1A031 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceSelectVC.swift; sourceTree = "<group>"; };
+		A033F2AE1D05FA7C00F1A031 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C2804C1D012547008D2DF9 /* StartVC.swift */,
+				A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -142,6 +151,9 @@
 		A06DD0041D056FF100DD8948 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A033F2AA1D05F75B00F1A031 /* Global.swift */,
+				A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */,
+				A033F2AE1D05FA7C00F1A031 /* Manager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -496,6 +508,10 @@
 			files = (
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
 				A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */,
+				A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */,
+				A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */,
+				A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */,
+				A033F2AB1D05F75B00F1A031 /* Global.swift in Sources */,
 				A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
