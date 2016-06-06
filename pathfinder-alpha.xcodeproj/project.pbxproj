@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B192742CB268E5B9D14D02A /* Pods_pathfinder_alphaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */; };
+		9FCCBDE52558F7B6C2CF0EB4 /* Pods_pathfinder_alphaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* ViewController.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */; };
 		A0C280631D012547008D2DF9 /* pathfinder_alphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C280621D012547008D2DF9 /* pathfinder_alphaTests.swift */; };
 		A0C2806E1D012547008D2DF9 /* pathfinder_alphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */; };
+		D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alphaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		673A2980DC8A2B8F2027F35E /* Pods-pathfinder-alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alpha/Pods-pathfinder-alpha.debug.xcconfig"; sourceTree = "<group>"; };
+		75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alphaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77AFE22F87E0C235C0E0C4AA /* Pods-pathfinder-alphaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaUITests/Pods-pathfinder-alphaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaUITests.swift; sourceTree = "<group>"; };
 		A0C2806F1D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA25D2ABBC16FBC406152F1B /* Pods-pathfinder-alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alpha/Pods-pathfinder-alpha.release.xcconfig"; sourceTree = "<group>"; };
+		DC03DBFEDC8CEF0C7749000F /* Pods-pathfinder-alphaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC95018DD9B69F17654B56D2 /* Pods-pathfinder-alphaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaUITests/Pods-pathfinder-alphaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B192742CB268E5B9D14D02A /* Pods_pathfinder_alphaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCCBDE52558F7B6C2CF0EB4 /* Pods_pathfinder_alphaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		506F63EEA021B603BC865271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */,
+				3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */,
+				75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0C2803E1D012547008D2DF9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				A0C280611D012547008D2DF9 /* pathfinder-alphaTests */,
 				A0C2806C1D012547008D2DF9 /* pathfinder-alphaUITests */,
 				A0C280481D012547008D2DF9 /* Products */,
+				EBE22395985019D9946D61F7 /* Pods */,
+				506F63EEA021B603BC865271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +155,19 @@
 			path = "pathfinder-alphaUITests";
 			sourceTree = "<group>";
 		};
+		EBE22395985019D9946D61F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				673A2980DC8A2B8F2027F35E /* Pods-pathfinder-alpha.debug.xcconfig */,
+				DA25D2ABBC16FBC406152F1B /* Pods-pathfinder-alpha.release.xcconfig */,
+				8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */,
+				DC03DBFEDC8CEF0C7749000F /* Pods-pathfinder-alphaTests.release.xcconfig */,
+				77AFE22F87E0C235C0E0C4AA /* Pods-pathfinder-alphaUITests.debug.xcconfig */,
+				DC95018DD9B69F17654B56D2 /* Pods-pathfinder-alphaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C280721D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alpha" */;
 			buildPhases = (
+				A93C660AA73BDB1C5E6B73BC /* 📦 Check Pods Manifest.lock */,
 				A0C280431D012547008D2DF9 /* Sources */,
 				A0C280441D012547008D2DF9 /* Frameworks */,
 				A0C280451D012547008D2DF9 /* Resources */,
+				4A09038C9CEC37264AC206C2 /* 📦 Embed Pods Frameworks */,
+				1341B8CED4CE6670C49DAE01 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C280751D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaTests" */;
 			buildPhases = (
+				2AC11EAF0108DB4F93BBDE3E /* 📦 Check Pods Manifest.lock */,
 				A0C2805A1D012547008D2DF9 /* Sources */,
 				A0C2805B1D012547008D2DF9 /* Frameworks */,
 				A0C2805C1D012547008D2DF9 /* Resources */,
+				D9C0B964AC2EF193E707B30E /* 📦 Embed Pods Frameworks */,
+				8229F38B62141F388B897954 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C280781D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaUITests" */;
 			buildPhases = (
+				DB30C6EAAD6AB76DC1301161 /* 📦 Check Pods Manifest.lock */,
 				A0C280651D012547008D2DF9 /* Sources */,
 				A0C280661D012547008D2DF9 /* Frameworks */,
 				A0C280671D012547008D2DF9 /* Resources */,
+				CF39973CE2DE3B1F22D4B74A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1341B8CED4CE6670C49DAE01 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alpha/Pods-pathfinder-alpha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AC11EAF0108DB4F93BBDE3E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A09038C9CEC37264AC206C2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alpha/Pods-pathfinder-alpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8229F38B62141F388B897954 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93C660AA73BDB1C5E6B73BC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF39973CE2DE3B1F22D4B74A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alphaUITests/Pods-pathfinder-alphaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C0B964AC2EF193E707B30E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB30C6EAAD6AB76DC1301161 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0C280431D012547008D2DF9 /* Sources */ = {
@@ -403,6 +574,7 @@
 		};
 		A0C280731D012547008D2DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 673A2980DC8A2B8F2027F35E /* Pods-pathfinder-alpha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pathfinder-alpha/Info.plist";
@@ -414,6 +586,7 @@
 		};
 		A0C280741D012547008D2DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA25D2ABBC16FBC406152F1B /* Pods-pathfinder-alpha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "pathfinder-alpha/Info.plist";
@@ -425,6 +598,7 @@
 		};
 		A0C280761D012547008D2DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "pathfinder-alphaTests/Info.plist";
@@ -437,6 +611,7 @@
 		};
 		A0C280771D012547008D2DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC03DBFEDC8CEF0C7749000F /* Pods-pathfinder-alphaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "pathfinder-alphaTests/Info.plist";
@@ -449,6 +624,7 @@
 		};
 		A0C280791D012547008D2DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77AFE22F87E0C235C0E0C4AA /* Pods-pathfinder-alphaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "pathfinder-alphaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -460,6 +636,7 @@
 		};
 		A0C2807A1D012547008D2DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC95018DD9B69F17654B56D2 /* Pods-pathfinder-alphaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "pathfinder-alphaUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -488,6 +665,7 @@
 				A0C280741D012547008D2DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0C280751D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +674,7 @@
 				A0C280771D012547008D2DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0C280781D012547008D2DF9 /* Build configuration list for PBXNativeTarget "pathfinder-alphaUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +683,7 @@
 				A0C2807A1D012547008D2DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
