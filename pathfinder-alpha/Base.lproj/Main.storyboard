@@ -255,6 +255,7 @@
                                 <state key="normal" title="Set Default"/>
                                 <connections>
                                     <action selector="defaultBtnPressed:" destination="9k3-yA-v66" eventType="touchUpInside" id="JN8-A0-XKe"/>
+                                    <segue destination="z4x-dZ-NAI" kind="show" id="6ra-et-hfU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -268,6 +269,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="57I-vw-zda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2300" y="266"/>
+        </scene>
+        <!--SkillsVC-->
+        <scene sceneID="2B0-Lx-xgP">
+            <objects>
+                <viewController id="z4x-dZ-NAI" customClass="SkillsVC" customModule="pathfinder_alpha" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ybb-i3-c0e"/>
+                        <viewControllerLayoutGuide type="bottom" id="UqW-es-6V3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Gh-dQ-8qp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIT-Ks-47d">
+                                <rect key="frame" x="262" y="285" width="77" height="30"/>
+                                <state key="normal" title="Set Default"/>
+                                <connections>
+                                    <action selector="defaultBtnPressed:" destination="9k3-yA-v66" eventType="touchUpInside" id="M89-c0-5U1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tIT-Ks-47d" firstAttribute="centerX" secondItem="0Gh-dQ-8qp" secondAttribute="centerX" id="238-pw-dgd"/>
+                            <constraint firstItem="tIT-Ks-47d" firstAttribute="centerY" secondItem="0Gh-dQ-8qp" secondAttribute="centerY" id="wZS-8b-qhV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BK9-Vq-dE6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2985" y="266"/>
         </scene>
     </scenes>
 </document>

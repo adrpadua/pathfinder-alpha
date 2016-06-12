@@ -18,6 +18,7 @@
 		A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AE1D05FA7C00F1A031 /* Manager.swift */; };
 		A033F2B11D05FC9700F1A031 /* ClassSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */; };
 		A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */; };
+		A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		A033F2AE1D05FA7C00F1A031 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectVC.swift; sourceTree = "<group>"; };
 		A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScoreVC.swift; sourceTree = "<group>"; };
+		A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */,
 				A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */,
 				A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */,
+				A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */,
+				A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */,
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
 				A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */,
 				A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */,
