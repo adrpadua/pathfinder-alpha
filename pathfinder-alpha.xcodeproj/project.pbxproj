@@ -14,9 +14,10 @@
 		A02AF8071D05F3CD002F724B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; };
 		A02AF8081D05F3CD002F724B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */; };
-		A033F2AB1D05F75B00F1A031 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AA1D05F75B00F1A031 /* Global.swift */; };
 		A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */; };
 		A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AE1D05FA7C00F1A031 /* Manager.swift */; };
+		A033F2B11D05FC9700F1A031 /* ClassSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */; };
+		A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -69,9 +70,10 @@
 		A02AF8031D05F3CD002F724B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A02AF8041D05F3CD002F724B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
-		A033F2AA1D05F75B00F1A031 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceSelectVC.swift; sourceTree = "<group>"; };
 		A033F2AE1D05FA7C00F1A031 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectVC.swift; sourceTree = "<group>"; };
+		A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScoreVC.swift; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -137,6 +139,8 @@
 			children = (
 				A0C2804C1D012547008D2DF9 /* StartVC.swift */,
 				A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */,
+				A033F2B01D05FC9700F1A031 /* ClassSelectVC.swift */,
+				A033F2B41D05FE6F00F1A031 /* AbilityScoreVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -151,11 +155,17 @@
 		A06DD0041D056FF100DD8948 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A033F2AA1D05F75B00F1A031 /* Global.swift */,
 				A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */,
-				A033F2AE1D05FA7C00F1A031 /* Manager.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		A0833CCB1D0CFB90002C5A67 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A033F2AE1D05FA7C00F1A031 /* Manager.swift */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		A0C2803E1D012547008D2DF9 = {
@@ -185,15 +195,16 @@
 		A0C280491D012547008D2DF9 /* pathfinder-alpha */ = {
 			isa = PBXGroup;
 			children = (
+				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
+				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
+				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,
+				A0C280591D012547008D2DF9 /* Info.plist */,
+				A0C280541D012547008D2DF9 /* Assets.xcassets */,
+				A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */,
+				A0833CCB1D0CFB90002C5A67 /* Utilities */,
 				A06DD0041D056FF100DD8948 /* Model */,
 				A06DD0031D056FEC00DD8948 /* View */,
 				A06DD0021D056FBF00DD8948 /* Controller */,
-				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
-				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
-				A0C280541D012547008D2DF9 /* Assets.xcassets */,
-				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,
-				A0C280591D012547008D2DF9 /* Info.plist */,
-				A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */,
 			);
 			path = "pathfinder-alpha";
 			sourceTree = "<group>";
@@ -506,12 +517,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */,
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
 				A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */,
 				A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */,
 				A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */,
 				A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */,
-				A033F2AB1D05F75B00F1A031 /* Global.swift in Sources */,
+				A033F2B11D05FC9700F1A031 /* ClassSelectVC.swift in Sources */,
 				A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

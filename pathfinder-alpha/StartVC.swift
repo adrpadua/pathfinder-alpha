@@ -13,11 +13,22 @@ class StartVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("Welcome. # of characters in database = \(Manager.instance.characters.count)")
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func startBtnPressed(sender: UIButton) {
+        Manager.instance.createNewCharacter()
+        print("New Character created:")
+        print(Manager.instance.active_pc)
+        Manager.instance.saveActiveCharacter()
+        print("# of characters in database = \(Manager.instance.characters.count)")
+    }
+    
+    @IBAction func clearDataBtnPressed(sender: UIButton) {
+        Manager.instance.clearAllData()
+        print("Character database cleared.")
+        print("# of characters in database = \(Manager.instance.characters.count)")
     }
 
     

@@ -1,5 +1,5 @@
 //
-//  RaceSelectVC.swift
+//  ClassSelectVC.swift
 //  pathfinder-alpha
 //
 //  Created by Adrian Padua on 6/6/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RaceSelectVC: UIViewController {
+class ClassSelectVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +24,12 @@ class RaceSelectVC: UIViewController {
     @IBAction func btnPressed(sender: UIButton) {
         
         if let character = Manager.instance.active_pc {
-            character.setRace(sender.titleLabel!.text!)
+            character.setClass(sender.titleLabel!.text!)
         }
         
         print(Manager.instance.active_pc)
         
-        performSegueWithIdentifier("raceSelectingFinished", sender: sender)
-        
-        
+        performSegueWithIdentifier("classSelectingFinished", sender: sender)
     }
     
     // MARK: - Navigation
@@ -40,9 +38,11 @@ class RaceSelectVC: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "raceSelectingFinished" {
-            print("prepareForSegue")
+        
+        
+        if segue.identifier == "classSelectingFinished" {
             
         }
     }
+
 }
