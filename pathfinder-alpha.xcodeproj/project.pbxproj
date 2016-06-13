@@ -17,11 +17,11 @@
 		A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */; };
 		A0833CD11D0E5018002C5A67 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CD01D0E5018002C5A67 /* Skills.swift */; };
 		A0833CD31D0E503A002C5A67 /* AbilityScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CD21D0E503A002C5A67 /* AbilityScores.swift */; };
-		A0833CD71D0E82C2002C5A67 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD51D0E82C2002C5A67 /* Realm.framework */; };
-		A0833CD81D0E82C2002C5A67 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD51D0E82C2002C5A67 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A0833CD91D0E82C2002C5A67 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */; };
-		A0833CDA1D0E82C2002C5A67 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0833CDD1D0E8B7D002C5A67 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CDC1D0E8B7D002C5A67 /* Classes.swift */; };
+		A0833CE01D0E9062002C5A67 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDE1D0E9062002C5A67 /* Realm.framework */; };
+		A0833CE11D0E9062002C5A67 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDE1D0E9062002C5A67 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0833CE21D0E9062002C5A67 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */; };
+		A0833CE31D0E9062002C5A67 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -51,14 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A0833CDB1D0E82C2002C5A67 /* Embed Frameworks */ = {
+		A0833CE41D0E9062002C5A67 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A0833CDA1D0E82C2002C5A67 /* RealmSwift.framework in Embed Frameworks */,
-				A0833CD81D0E82C2002C5A67 /* Realm.framework in Embed Frameworks */,
+				A0833CE31D0E9062002C5A67 /* RealmSwift.framework in Embed Frameworks */,
+				A0833CE11D0E9062002C5A67 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,8 +71,6 @@
 		75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alphaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AFE22F87E0C235C0E0C4AA /* Pods-pathfinder-alphaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaUITests/Pods-pathfinder-alphaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8DC730A5EF888E1A25C879E3 /* Pods-pathfinder-alphaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A02AF8031D05F3CD002F724B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		A02AF8041D05F3CD002F724B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharacter.swift; sourceTree = "<group>"; };
 		A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceSelectVC.swift; sourceTree = "<group>"; };
 		A033F2AE1D05FA7C00F1A031 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
@@ -81,9 +79,9 @@
 		A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
 		A0833CD01D0E5018002C5A67 /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		A0833CD21D0E503A002C5A67 /* AbilityScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScores.swift; sourceTree = "<group>"; };
-		A0833CD51D0E82C2002C5A67 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A0833CDC1D0E8B7D002C5A67 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		A0833CDE1D0E9062002C5A67 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -109,9 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0833CD71D0E82C2002C5A67 /* Realm.framework in Frameworks */,
+				A0833CE01D0E9062002C5A67 /* Realm.framework in Frameworks */,
 				D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */,
-				A0833CD91D0E82C2002C5A67 /* RealmSwift.framework in Frameworks */,
+				A0833CE21D0E9062002C5A67 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,10 +183,8 @@
 		A0C2803E1D012547008D2DF9 = {
 			isa = PBXGroup;
 			children = (
-				A0833CD51D0E82C2002C5A67 /* Realm.framework */,
-				A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */,
-				A02AF8031D05F3CD002F724B /* Realm.framework */,
-				A02AF8041D05F3CD002F724B /* RealmSwift.framework */,
+				A0833CDE1D0E9062002C5A67 /* Realm.framework */,
+				A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */,
 				A0C280491D012547008D2DF9 /* pathfinder-alpha */,
 				A0C280611D012547008D2DF9 /* pathfinder-alphaTests */,
 				A0C2806C1D012547008D2DF9 /* pathfinder-alphaUITests */,
@@ -270,7 +266,7 @@
 				4A09038C9CEC37264AC206C2 /* 📦 Embed Pods Frameworks */,
 				1341B8CED4CE6670C49DAE01 /* 📦 Copy Pods Resources */,
 				A02AF80A1D05F48F002F724B /* ShellScript */,
-				A0833CDB1D0E82C2002C5A67 /* Embed Frameworks */,
+				A0833CE41D0E9062002C5A67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
