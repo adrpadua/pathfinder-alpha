@@ -30,6 +30,7 @@
                                 <rect key="frame" x="283" y="323" width="34" height="30"/>
                                 <state key="normal" title="Load"/>
                                 <connections>
+                                    <action selector="loadBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flM-MI-86u"/>
                                     <segue destination="fnf-ze-UWS" kind="show" id="nYp-Cj-foo"/>
                                 </connections>
                             </button>

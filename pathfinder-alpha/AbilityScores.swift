@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import Darwin
 
 enum Ability: Int {
     
@@ -31,22 +32,50 @@ enum Ability: Int {
     }
 }
 
-class AbilityScore: Object {
+class AbilityScoreList: Object {
     
-    dynamic var name = ""
-    dynamic var value = 10
-    dynamic var modifier: Int {
-        get {
-            let val: Double = (Double(value) - 10) / 2
-            return Int(floor(val))
+    let abilityScores = List<AbilityScore>()
+    
+    func generateAbilityScores(scores: [Int]) {
+        
+        if scores.count == 6 {
+            
+            for index in 1...6 {
+                let abilityName = Ability(rawValue:  index)?.name()
+                let ability = AbilityScore(value: ["name" : abilityName!, "value" : scores[index - 1]])
+                ability.refreshModifier()
+                abilityScores.append(ability)
+            }
+            
+        } else {
+            print("Error setting scores")
         }
     }
     
-    let character = LinkingObjects(fromType: PlayerCharacter.self, property: "pc_abilityScores")
+    
+}
+
+class AbilityScore: Object {
+    
+    let partOfList = LinkingObjects(fromType: AbilityScoreList.self, property: "abilityScores")
+    
+    dynamic var name = ""
+    dynamic var value = 10
+    dynamic var modifier = 0
+    
+    func refreshModifier() {
+        modifier = value.modifier
+    }
     
     override var description: String {
         get {
             return "\(name): \(value) (\(modifier))"
         }
+    }
+}
+
+extension Int {
+    var modifier: Int {
+        return (self - 10) / 2
     }
 }

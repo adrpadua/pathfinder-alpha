@@ -15,6 +15,8 @@ enum Skills: Int {
     
     case Acrobatics = 1, Appraise, Bluff, Climb, Craft, Diplomacy, DisableDevice, Disguise, EscapeArtist, Fly, HandleAnimal, Heal, Intimidate, KnowledgeArcana, KnowledgeDungeoneering, KnowledgeEngineering, KnowledgeHistory, KnowledgeGeography, KnowledgeLocal, KnowledgeNature, KnowledgeNobility, KnowledgePlanes, KnowledgeReligion, Linguistics, Perception, Perform, Profession, Ride, SenseMotive, SleightOfHand, Spellcraft, Stealth, Survival, Swim, UseMagicDevice
     
+    static let allValues = [Acrobatics, Appraise, Bluff, Climb, Craft, Diplomacy, DisableDevice, Disguise, EscapeArtist, Fly, HandleAnimal, Heal, Intimidate, KnowledgeArcana, KnowledgeDungeoneering, KnowledgeEngineering, KnowledgeHistory, KnowledgeGeography, KnowledgeLocal, KnowledgeNature, KnowledgeNobility, KnowledgePlanes, KnowledgeReligion, Linguistics, Perception, Perform, Profession, Ride, SenseMotive, SleightOfHand, Spellcraft, Stealth, Survival, Swim, UseMagicDevice]
+    
     func name() -> String {
         switch self {
         case .Acrobatics:
@@ -280,29 +282,40 @@ enum Skills: Int {
 
 class SkillList: Object {
     
-    dynamic var numPoints = 0
+    dynamic var numRanks = 0
     
     let skills = List<Skill>()
     
+    func getSkill(name: String) -> Skill {
+        let skill = skills.filter("name == %@", "\(name)")[0]
+        return skill
+    }
+    
     func generateBaseSkillList() {
-        
         for index in 1...numSkills {
             let skillName = Skills(rawValue: index)?.name()
             let keyAbility = Skills(rawValue: index)?.keyAbility()
-            addSkill(skillName!, points: 0, ability: keyAbility!)
+            addSkill(skillName!, ranks: 0, ability: keyAbility!)
         }
     }
     
-    func addSkill(name: String, points: Int, ability: Ability) {
+    func addSkill(name: String, ranks: Int, ability: Ability) {
         
-        skills.append(Skill(value: ["name" : name, "points" : points, "keyAbility" : ability.name()]))
-        numPoints += points
+        skills.append(Skill(value: ["name" : name, "ranks" : ranks, "keyAbility" : ability.name()]))
+        numRanks += ranks
+        
     }
     
-    func modifySkill(skillName: String, amountToModify: Int) {
+    func modifySkill(skillName: String, amountToModify: Int, isClassSkill: Bool) {
         
-        let skill = skills.filter("name == %@", "\(skillName)")
-        skill[0].addPoints(amountToModify)
+        let skill = skills.filter("name == %@", "\(skillName)")[0]
+        
+        if isClassSkill {
+            skill.classSkillBonus = 3
+        }
+        
+        skill.addRanks(amountToModify)
+        skill.refreshTotal()
         
     }
 }
@@ -313,10 +326,29 @@ class Skill: Object {
     
     dynamic var name = ""
     dynamic var keyAbility = ""
-    dynamic var points = 0
+    dynamic var classSkillBonus = 0
+    dynamic var baseValue = 0
+    dynamic var ranks = 0
+    dynamic var total = 0
     
-    func addPoints(num: Int) {
-        points += num
+    func addRanks(num: Int) {
+        ranks += num
+    }
+    
+    func refreshTotal() {
+        total = baseValue + ranks + classSkillBonus
+    }
+    
+    func skillsEnum() -> Skills {
+        for index in 0...numSkills {
+            
+            let skill = Skills(rawValue: index + 1)!
+            if self.name == skill.name() {
+                return skill
+            }
+        }
+        // Case not found, should never happen.
+        return Skills.UseMagicDevice
     }
     
 }

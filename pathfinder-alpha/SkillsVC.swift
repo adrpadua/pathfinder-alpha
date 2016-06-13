@@ -20,7 +20,7 @@ class SkillsVC: UIViewController {
         
         if let character = Manager.instance.active_pc {
             character.setBaseSkills()
-            character.modifySkill("Fly", byAmount: -1)
+            character.modifySkill("Use Magic Device", byAmount: 1)
         }
         
         print(Manager.instance.active_pc!)

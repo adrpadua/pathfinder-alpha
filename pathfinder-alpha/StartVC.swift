@@ -24,6 +24,23 @@ class StartVC: UIViewController {
         Manager.instance.saveActiveCharacter()
         print("# of characters in database = \(Manager.instance.characters.count)")
     }
+    @IBAction func loadBtnPressed(sender: UIButton) {
+        Manager.instance.createNewCharacter()
+        print("New Character created:")
+        Manager.instance.saveActiveCharacter()
+        print("# of characters in database = \(Manager.instance.characters.count)")
+        
+        if let character = Manager.instance.active_pc {
+            character.setRace("Halfling")
+            character.setClass("Rogue")
+            let scores = [10, 12, 14, 16, 18, 20]
+            character.setAbilityScores(scores)
+            character.setBaseSkills()
+            character.modifySkill("Disguise", byAmount: 1)
+        }
+        
+        print(Manager.instance.active_pc!)
+    }
     
     @IBAction func clearDataBtnPressed(sender: UIButton) {
         Manager.instance.clearAllData()

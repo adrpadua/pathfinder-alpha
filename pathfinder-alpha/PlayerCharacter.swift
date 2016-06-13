@@ -18,13 +18,15 @@ class PlayerCharacter: Object {
     //    return []
     //  }
     
+    //
     dynamic var pc_name = ""
     dynamic var pc_race = ""
     dynamic var pc_class = ""
     dynamic var pc_level = 1
-    dynamic var pc_skills: SkillList?
     
-    let pc_abilityScores = List<AbilityScore>()
+    // MARK: To-one relationships
+    dynamic var pc_abilityScores: AbilityScoreList?
+    dynamic var pc_skills: SkillList?
     
     // MARK: Setter functions
     func setName(newName: String) {
@@ -53,19 +55,10 @@ class PlayerCharacter: Object {
     }
     
     func setAbilityScores(newScores: [Int]) {
-        
-        if newScores.count == 6 {
+        try! Manager.instance._charactersRealm.write {
             
-            try! Manager.instance._charactersRealm.write {
-                
-                for index in 1...6 {
-                    let abilityName = Ability(rawValue: index)?.name()
-                    pc_abilityScores.append(AbilityScore(value: ["name" : abilityName!, "value" : newScores[index - 1]]))
-                }
-            }
-            
-        } else {
-            print("Error setting scores.")
+            pc_abilityScores = AbilityScoreList()
+            pc_abilityScores!.generateAbilityScores(newScores)
         }
     }
     
@@ -74,18 +67,45 @@ class PlayerCharacter: Object {
         try! Manager.instance._charactersRealm.write {
             pc_skills = SkillList()
             pc_skills!.generateBaseSkillList()
+            for skill in pc_skills!.skills {
+                let abil = skill.keyAbility // "STR"
+                let charAbilMod = pc_abilityScores!.abilityScores.filter("name == %@", "\(abil)")[0].modifier // "STR"
+                skill.baseValue = charAbilMod
+                skill.refreshTotal()
+            }
         }
     }
     
     func modifySkill(skillToModify: String, byAmount: Int) {
         
         try! Manager.instance._charactersRealm.write {
-            pc_skills!.modifySkill(skillToModify, amountToModify: byAmount)
+            
+            pc_skills!.modifySkill(skillToModify, amountToModify: byAmount, isClassSkill: isClassSkill(skillToModify))
+            pc_skills!.numRanks += byAmount
+            
         }
     }
     
     // HELPER FUNCTIONS
     func isClassSkill(skillToCheck: String) -> Bool {
-        return true
+        
+        var classesArray: [String]
+        
+        let skill = pc_skills!.getSkill(skillToCheck).skillsEnum()
+        classesArray = skill.classesFavoringSkill()
+        
+        for className in classesArray {
+            if pc_class == className {
+                return true
+            }
+        }
+        
+        
+        return false
     }
 }
+
+
+
+
+
