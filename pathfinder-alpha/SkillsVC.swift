@@ -19,9 +19,11 @@ class SkillsVC: UIViewController {
     @IBAction func setSkillsBtnPressed(sender: UIButton) {
         
         if let character = Manager.instance.active_pc {
-            
+            character.setBaseSkills()
+            character.modifySkill("Fly", byAmount: -1)
         }
         
+        print(Manager.instance.active_pc!)
     }
     
 

@@ -58,12 +58,10 @@ class PlayerCharacter: Object {
             
             try! Manager.instance._charactersRealm.write {
                 
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.STR.rawValue, "value" : newScores[0]]))
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.DEX.rawValue, "value" : newScores[1]]))
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.CON.rawValue, "value" : newScores[2]]))
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.INT.rawValue, "value" : newScores[3]]))
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.WIS.rawValue, "value" : newScores[4]]))
-                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.CHA.rawValue, "value" : newScores[5]]))
+                for index in 1...6 {
+                    let abilityName = Ability(rawValue: index)?.name()
+                    pc_abilityScores.append(AbilityScore(value: ["name" : abilityName!, "value" : newScores[index - 1]]))
+                }
             }
             
         } else {
@@ -71,13 +69,23 @@ class PlayerCharacter: Object {
         }
     }
     
+    func setBaseSkills() {
+        
+        try! Manager.instance._charactersRealm.write {
+            pc_skills = SkillList()
+            pc_skills!.generateBaseSkillList()
+        }
+    }
     
-    // MARK: Helper Functions
-    func generateSkillList() {
+    func modifySkill(skillToModify: String, byAmount: Int) {
         
-        pc_skills = SkillList()
-        let skills = pc_skills!.skills
-        
-        skills.append(Skill(value: ["name" : "", "" : 0]))
+        try! Manager.instance._charactersRealm.write {
+            pc_skills!.modifySkill(skillToModify, amountToModify: byAmount)
+        }
+    }
+    
+    // HELPER FUNCTIONS
+    func isClassSkill(skillToCheck: String) -> Bool {
+        return true
     }
 }

@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		2B192742CB268E5B9D14D02A /* Pods_pathfinder_alphaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */; };
 		9FCCBDE52558F7B6C2CF0EB4 /* Pods_pathfinder_alphaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */; };
-		A02AF8051D05F3CD002F724B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8031D05F3CD002F724B /* Realm.framework */; };
-		A02AF8061D05F3CD002F724B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8031D05F3CD002F724B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A02AF8071D05F3CD002F724B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; };
-		A02AF8081D05F3CD002F724B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A02AF8041D05F3CD002F724B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */; };
 		A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AC1D05F9DD00F1A031 /* RaceSelectVC.swift */; };
 		A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033F2AE1D05FA7C00F1A031 /* Manager.swift */; };
@@ -21,6 +17,11 @@
 		A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */; };
 		A0833CD11D0E5018002C5A67 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CD01D0E5018002C5A67 /* Skills.swift */; };
 		A0833CD31D0E503A002C5A67 /* AbilityScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CD21D0E503A002C5A67 /* AbilityScores.swift */; };
+		A0833CD71D0E82C2002C5A67 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD51D0E82C2002C5A67 /* Realm.framework */; };
+		A0833CD81D0E82C2002C5A67 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD51D0E82C2002C5A67 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0833CD91D0E82C2002C5A67 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */; };
+		A0833CDA1D0E82C2002C5A67 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A0833CDD1D0E8B7D002C5A67 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0833CDC1D0E8B7D002C5A67 /* Classes.swift */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -50,14 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A02AF8091D05F3CD002F724B /* Embed Frameworks */ = {
+		A0833CDB1D0E82C2002C5A67 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A02AF8081D05F3CD002F724B /* RealmSwift.framework in Embed Frameworks */,
-				A02AF8061D05F3CD002F724B /* Realm.framework in Embed Frameworks */,
+				A0833CDA1D0E82C2002C5A67 /* RealmSwift.framework in Embed Frameworks */,
+				A0833CD81D0E82C2002C5A67 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +81,9 @@
 		A0833CCE1D0D1AB2002C5A67 /* SkillsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsVC.swift; sourceTree = "<group>"; };
 		A0833CD01D0E5018002C5A67 /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		A0833CD21D0E503A002C5A67 /* AbilityScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbilityScores.swift; sourceTree = "<group>"; };
-		A0833CD41D0E8104002C5A67 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		A0833CD51D0E82C2002C5A67 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A0833CDC1D0E8B7D002C5A67 /* Classes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -106,9 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02AF8051D05F3CD002F724B /* Realm.framework in Frameworks */,
+				A0833CD71D0E82C2002C5A67 /* Realm.framework in Frameworks */,
 				D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */,
-				A02AF8071D05F3CD002F724B /* RealmSwift.framework in Frameworks */,
+				A0833CD91D0E82C2002C5A67 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +169,7 @@
 				A033F2A81D05F5F300F1A031 /* PlayerCharacter.swift */,
 				A0833CD21D0E503A002C5A67 /* AbilityScores.swift */,
 				A0833CD01D0E5018002C5A67 /* Skills.swift */,
+				A0833CDC1D0E8B7D002C5A67 /* Classes.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -181,6 +185,8 @@
 		A0C2803E1D012547008D2DF9 = {
 			isa = PBXGroup;
 			children = (
+				A0833CD51D0E82C2002C5A67 /* Realm.framework */,
+				A0833CD61D0E82C2002C5A67 /* RealmSwift.framework */,
 				A02AF8031D05F3CD002F724B /* Realm.framework */,
 				A02AF8041D05F3CD002F724B /* RealmSwift.framework */,
 				A0C280491D012547008D2DF9 /* pathfinder-alpha */,
@@ -215,7 +221,6 @@
 				A06DD0041D056FF100DD8948 /* Model */,
 				A06DD0031D056FEC00DD8948 /* View */,
 				A06DD0021D056FBF00DD8948 /* Controller */,
-				A0833CD41D0E8104002C5A67 /* MyPlayground.playground */,
 			);
 			path = "pathfinder-alpha";
 			sourceTree = "<group>";
@@ -264,8 +269,8 @@
 				A0C280451D012547008D2DF9 /* Resources */,
 				4A09038C9CEC37264AC206C2 /* 📦 Embed Pods Frameworks */,
 				1341B8CED4CE6670C49DAE01 /* 📦 Copy Pods Resources */,
-				A02AF8091D05F3CD002F724B /* Embed Frameworks */,
 				A02AF80A1D05F48F002F724B /* ShellScript */,
+				A0833CDB1D0E82C2002C5A67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -530,6 +535,7 @@
 			files = (
 				A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */,
 				A0833CD31D0E503A002C5A67 /* AbilityScores.swift in Sources */,
+				A0833CDD1D0E8B7D002C5A67 /* Classes.swift in Sources */,
 				A0833CD11D0E5018002C5A67 /* Skills.swift in Sources */,
 				A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */,
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
@@ -703,7 +709,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = RealmSwift.framework;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "/Users/adrpadua/xCodeProjects/pathfinder-alpha";
 				INFOPLIST_FILE = "pathfinder-alpha/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adrpadua.pathfinder-alpha";

@@ -173,7 +173,7 @@ class SkillList: Object {
     
     let skills = List<Skill>()
     
-    func generateEmptySkillList() {
+    func generateBaseSkillList() {
         
         for index in 1...numSkills {
             let skillName = Skills(rawValue: index)?.name()
@@ -184,14 +184,13 @@ class SkillList: Object {
     
     func addSkill(name: String, points: Int, ability: Ability) {
         
-        skills.append(Skill(value: ["name" : name, "points" : points, "keyAbility" : ability.rawValue]))
-        
+        skills.append(Skill(value: ["name" : name, "points" : points, "keyAbility" : ability.name()]))
         numPoints += points
     }
     
-    func modifySkill(skillToModify: Skills.RawValue, amountToModify: Int) {
+    func modifySkill(skillName: String, amountToModify: Int) {
         
-        let skill = skills.filter("contains '\(skillToModify)'")
+        let skill = skills.filter("name == %@", "\(skillName)")
         skill[0].addPoints(amountToModify)
         
     }
