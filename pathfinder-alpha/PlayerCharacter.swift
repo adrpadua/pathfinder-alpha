@@ -22,14 +22,11 @@ class PlayerCharacter: Object {
     dynamic var pc_race = ""
     dynamic var pc_class = ""
     dynamic var pc_level = 1
+    dynamic var pc_skills: SkillList?
     
-    dynamic var pc_str: AbilityScore?
-    dynamic var pc_dex: AbilityScore?
-    dynamic var pc_con: AbilityScore?
-    dynamic var pc_int: AbilityScore?
-    dynamic var pc_wis: AbilityScore?
-    dynamic var pc_cha: AbilityScore?
+    let pc_abilityScores = List<AbilityScore>()
     
+    // MARK: Setter functions
     func setName(newName: String) {
         try! Manager.instance._charactersRealm.write {
             self.pc_race = newName
@@ -61,34 +58,26 @@ class PlayerCharacter: Object {
             
             try! Manager.instance._charactersRealm.write {
                 
-                pc_str = AbilityScore(value: ["name" : "STR", "value" : newScores[0]])
-                pc_dex = AbilityScore(value: ["name" : "DEX", "value" : newScores[1]])
-                pc_con = AbilityScore(value: ["name" : "CON", "value" : newScores[2]])
-                pc_int = AbilityScore(value: ["name" : "INT", "value" : newScores[3]])
-                pc_wis = AbilityScore(value: ["name" : "WIS", "value" : newScores[4]])
-                pc_cha = AbilityScore(value: ["name" : "CHA", "value" : newScores[5]])
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.STR.rawValue, "value" : newScores[0]]))
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.DEX.rawValue, "value" : newScores[1]]))
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.CON.rawValue, "value" : newScores[2]]))
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.INT.rawValue, "value" : newScores[3]]))
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.WIS.rawValue, "value" : newScores[4]]))
+                pc_abilityScores.append(AbilityScore(value: ["name" : Ability.CHA.rawValue, "value" : newScores[5]]))
             }
             
         } else {
             print("Error setting scores.")
         }
     }
-}
-
-class AbilityScore: Object{
     
-    dynamic var name = ""
-    dynamic var value = 10
-    dynamic var modifier: Int {
-        get {
-            let val: Double = (Double(value) - 10) / 2
-            return Int(floor(val))
-        }
-    }
     
-    override var description: String {
-        get {
-            return "\(name): \(value) (\(modifier))"
-        }
+    // MARK: Helper Functions
+    func generateSkillList() {
+        
+        pc_skills = SkillList()
+        let skills = pc_skills!.skills
+        
+        skills.append(Skill(value: ["name" : "", "" : 0]))
     }
 }

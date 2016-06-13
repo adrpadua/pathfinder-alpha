@@ -23,14 +23,13 @@ class AbilityScoreVC: UIViewController {
     }
     
     @IBAction func defaultBtnPressed(sender: UIButton) {
-        let scores = [1, 12, 15, 6, 8, 10]
+        let scores = [14, 2, 3, 6, 19, 13]
         
         if let character = Manager.instance.active_pc {
             character.setAbilityScores(scores)
         }
         
         print(Manager.instance.active_pc!)
-        print(Manager.instance.active_pc!.pc_int!)
         
         
     }

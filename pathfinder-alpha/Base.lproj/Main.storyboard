@@ -250,9 +250,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-zB-n63">
-                                <rect key="frame" x="262" y="285" width="77" height="30"/>
-                                <state key="normal" title="Set Default"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKC-zB-n63">
+                                <rect key="frame" x="214" y="285" width="174" height="30"/>
+                                <state key="normal" title="Set Default Ability Scores"/>
                                 <connections>
                                     <action selector="defaultBtnPressed:" destination="9k3-yA-v66" eventType="touchUpInside" id="JN8-A0-XKe"/>
                                     <segue destination="z4x-dZ-NAI" kind="show" id="6ra-et-hfU"/>
@@ -283,10 +283,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIT-Ks-47d">
-                                <rect key="frame" x="262" y="285" width="77" height="30"/>
-                                <state key="normal" title="Set Default"/>
+                                <rect key="frame" x="242" y="285" width="116" height="30"/>
+                                <state key="normal" title="Set Default Skills"/>
                                 <connections>
                                     <action selector="defaultBtnPressed:" destination="9k3-yA-v66" eventType="touchUpInside" id="M89-c0-5U1"/>
+                                    <action selector="setSkillsBtnPressed:" destination="z4x-dZ-NAI" eventType="touchUpInside" id="4nI-P8-yXj"/>
                                 </connections>
                             </button>
                         </subviews>

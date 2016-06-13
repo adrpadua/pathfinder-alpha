@@ -16,6 +16,13 @@ class SkillsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func setSkillsBtnPressed(sender: UIButton) {
+        
+        if let character = Manager.instance.active_pc {
+            
+        }
+        
+    }
     
 
     /*

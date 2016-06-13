@@ -23,7 +23,7 @@ class Manager {
     
     init() {
         var config = Realm.Configuration.defaultConfiguration
-        config.schemaVersion = 3
+        config.schemaVersion = 5
         
         _charactersRealm = try! Realm(configuration: config)
         
