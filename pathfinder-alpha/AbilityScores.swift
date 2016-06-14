@@ -88,8 +88,8 @@ class AbilityScore: Object {
             return "\(name): \(value) (\(modifier))"
         }
     }
-}
 
+}
 extension Int {
     var modifier: Int {
         return (self - 10) / 2
