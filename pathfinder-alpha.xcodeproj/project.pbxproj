@@ -30,6 +30,12 @@
 		A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */; };
 		A0C280631D012547008D2DF9 /* pathfinder_alphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C280621D012547008D2DF9 /* pathfinder_alphaTests.swift */; };
 		A0C2806E1D012547008D2DF9 /* pathfinder_alphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */; };
+		A0FFFFED1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv in Resources */ = {isa = PBXBuildFile; fileRef = A0FFFFEC1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv */; };
+		A0FFFFF31D0FA62A0012BFD1 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFFFEE1D0FA62A0012BFD1 /* CSV.swift */; };
+		A0FFFFF41D0FA62A0012BFD1 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFFFEF1D0FA62A0012BFD1 /* Description.swift */; };
+		A0FFFFF51D0FA62A0012BFD1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFFFF01D0FA62A0012BFD1 /* Parser.swift */; };
+		A0FFFFF61D0FA62A0012BFD1 /* ParserHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFFFF11D0FA62A0012BFD1 /* ParserHelpers.swift */; };
+		A0FFFFF71D0FA62A0012BFD1 /* String+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFFFF21D0FA62A0012BFD1 /* String+Lines.swift */; };
 		D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +102,12 @@
 		A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaUITests.swift; sourceTree = "<group>"; };
 		A0C2806F1D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FFFFEC1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Feats_PFSRD_Core.csv; sourceTree = "<group>"; };
+		A0FFFFEE1D0FA62A0012BFD1 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		A0FFFFEF1D0FA62A0012BFD1 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		A0FFFFF01D0FA62A0012BFD1 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		A0FFFFF11D0FA62A0012BFD1 /* ParserHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserHelpers.swift; sourceTree = "<group>"; };
+		A0FFFFF21D0FA62A0012BFD1 /* String+Lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Lines.swift"; sourceTree = "<group>"; };
 		AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA25D2ABBC16FBC406152F1B /* Pods-pathfinder-alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alpha/Pods-pathfinder-alpha.release.xcconfig"; sourceTree = "<group>"; };
 		DC03DBFEDC8CEF0C7749000F /* Pods-pathfinder-alphaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pathfinder-alphaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +225,7 @@
 				A0C280591D012547008D2DF9 /* Info.plist */,
 				A0C280541D012547008D2DF9 /* Assets.xcassets */,
 				A0C280511D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld */,
+				A0FFFFEB1D0FA60C0012BFD1 /* Resources */,
 				A0833CCB1D0CFB90002C5A67 /* Utilities */,
 				A06DD0041D056FF100DD8948 /* Model */,
 				A06DD0031D056FEC00DD8948 /* View */,
@@ -237,6 +250,27 @@
 				A0C2806F1D012547008D2DF9 /* Info.plist */,
 			);
 			path = "pathfinder-alphaUITests";
+			sourceTree = "<group>";
+		};
+		A0FFFFEB1D0FA60C0012BFD1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0FFFFF81D0FA62F0012BFD1 /* SwiftCSV */,
+				A0FFFFEC1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A0FFFFF81D0FA62F0012BFD1 /* SwiftCSV */ = {
+			isa = PBXGroup;
+			children = (
+				A0FFFFEE1D0FA62A0012BFD1 /* CSV.swift */,
+				A0FFFFEF1D0FA62A0012BFD1 /* Description.swift */,
+				A0FFFFF01D0FA62A0012BFD1 /* Parser.swift */,
+				A0FFFFF11D0FA62A0012BFD1 /* ParserHelpers.swift */,
+				A0FFFFF21D0FA62A0012BFD1 /* String+Lines.swift */,
+			);
+			name = SwiftCSV;
 			sourceTree = "<group>";
 		};
 		EBE22395985019D9946D61F7 /* Pods */ = {
@@ -368,6 +402,7 @@
 				A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */,
 				A0C280551D012547008D2DF9 /* Assets.xcassets in Resources */,
 				A0C280501D012547008D2DF9 /* Main.storyboard in Resources */,
+				A0FFFFED1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,15 +552,20 @@
 			files = (
 				A033F2B51D05FE6F00F1A031 /* AbilityScoreVC.swift in Sources */,
 				A0833CD31D0E503A002C5A67 /* AbilityScores.swift in Sources */,
+				A0FFFFF51D0FA62A0012BFD1 /* Parser.swift in Sources */,
 				A0833CDD1D0E8B7D002C5A67 /* Classes.swift in Sources */,
 				A0833CD11D0E5018002C5A67 /* Skills.swift in Sources */,
 				A0833CCF1D0D1AB2002C5A67 /* SkillsVC.swift in Sources */,
+				A0FFFFF31D0FA62A0012BFD1 /* CSV.swift in Sources */,
 				A0C280531D012547008D2DF9 /* pathfinder_alpha.xcdatamodeld in Sources */,
 				A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */,
 				A033F2A91D05F5F300F1A031 /* PlayerCharacter.swift in Sources */,
 				A033F2AD1D05F9DD00F1A031 /* RaceSelectVC.swift in Sources */,
+				A0FFFFF41D0FA62A0012BFD1 /* Description.swift in Sources */,
+				A0FFFFF71D0FA62A0012BFD1 /* String+Lines.swift in Sources */,
 				A033F2AF1D05FA7C00F1A031 /* Manager.swift in Sources */,
 				A033F2B11D05FC9700F1A031 /* ClassSelectVC.swift in Sources */,
+				A0FFFFF61D0FA62A0012BFD1 /* ParserHelpers.swift in Sources */,
 				A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
