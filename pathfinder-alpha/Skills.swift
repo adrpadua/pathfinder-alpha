@@ -286,7 +286,7 @@ class SkillList: Object {
     
     let skills = List<Skill>()
     
-    func getSkill(name: String) -> Skill {
+    func findSkillWithName(name: String) -> Skill {
         let skill = skills.filter("name == %@", "\(name)")[0]
         return skill
     }
@@ -301,14 +301,15 @@ class SkillList: Object {
     
     func addSkill(name: String, ranks: Int, ability: Ability) {
         
-        skills.append(Skill(value: ["name" : name, "ranks" : ranks, "keyAbility" : ability.name()]))
+        let skill = Skill(name: name, ranks: ranks, ability: ability)
+        skills.append(skill)
         numRanks += ranks
         
     }
     
     func modifySkill(skillName: String, amountToModify: Int, isClassSkill: Bool) {
         
-        let skill = skills.filter("name == %@", "\(skillName)")[0]
+        let skill = findSkillWithName(skillName)
         
         if isClassSkill {
             skill.classSkillBonus = 3
@@ -316,7 +317,6 @@ class SkillList: Object {
         
         skill.addRanks(amountToModify)
         skill.refreshTotal()
-        
     }
 }
 
@@ -331,6 +331,13 @@ class Skill: Object {
     dynamic var ranks = 0
     dynamic var total = 0
     
+    convenience init(name: String, ranks: Int, ability: Ability) {
+        self.init()
+        self.name = name
+        self.ranks = ranks
+        self.keyAbility = ability.name()
+    }
+    
     func addRanks(num: Int) {
         ranks += num
     }
@@ -339,7 +346,7 @@ class Skill: Object {
         total = baseValue + ranks + classSkillBonus
     }
     
-    func skillsEnum() -> Skills {
+    func skillsEnum() -> Skills? {
         for index in 0...numSkills {
             
             let skill = Skills(rawValue: index + 1)!
@@ -348,7 +355,11 @@ class Skill: Object {
             }
         }
         // Case not found, should never happen.
-        return Skills.UseMagicDevice
+        return nil
+    }
+    
+    override static func indexedProperties() -> [String] {
+        return ["name", "keyAbility"]
     }
     
 }

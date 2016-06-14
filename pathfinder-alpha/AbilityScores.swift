@@ -41,9 +41,8 @@ class AbilityScoreList: Object {
         if scores.count == 6 {
             
             for index in 1...6 {
-                let abilityName = Ability(rawValue:  index)?.name()
-                let ability = AbilityScore(value: ["name" : abilityName!, "value" : scores[index - 1]])
-                ability.refreshModifier()
+                let name = Ability(rawValue:  index)?.name()
+                let ability = AbilityScore(name: name!, value: scores[index - 1])
                 abilityScores.append(ability)
             }
             
@@ -52,7 +51,10 @@ class AbilityScoreList: Object {
         }
     }
     
-    
+    func findAbilityWithName(name: String) -> AbilityScore {
+        let abilityScore = abilityScores.filter("name == %@", "\(name)")[0]
+        return abilityScore
+    }
 }
 
 class AbilityScore: Object {
@@ -62,6 +64,13 @@ class AbilityScore: Object {
     dynamic var name = ""
     dynamic var value = 10
     dynamic var modifier = 0
+    
+    convenience init(name: String, value: Int) {
+        self.init()
+        self.name = name
+        self.value = value
+        refreshModifier()
+    }
     
     func refreshModifier() {
         modifier = value.modifier

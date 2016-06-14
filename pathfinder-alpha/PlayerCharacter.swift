@@ -10,6 +10,8 @@ import Foundation
 import RealmSwift
 import Darwin
 
+let realm = Manager.instance.realm
+
 class PlayerCharacter: Object {
     
     // Specify properties to ignore (Realm won't persist these)
@@ -18,7 +20,7 @@ class PlayerCharacter: Object {
     //    return []
     //  }
     
-    //
+    // Properties
     dynamic var pc_name = ""
     dynamic var pc_race = ""
     dynamic var pc_class = ""
@@ -27,35 +29,36 @@ class PlayerCharacter: Object {
     // MARK: To-one relationships
     dynamic var pc_abilityScores: AbilityScoreList?
     dynamic var pc_skills: SkillList?
+    dynamic var pc_feats: FeatsList?
     
     // MARK: Setter functions
     func setName(newName: String) {
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             self.pc_race = newName
         }
         self.pc_name = newName
     }
     
     func setRace(newRace: String) {
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             self.pc_race = newRace
         }
     }
     
     func setClass(newClass: String) {
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             self.pc_class = newClass
         }
     }
     
     func setLevel(newLevel: Int) {
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             self.pc_level = newLevel
         }
     }
     
     func setAbilityScores(newScores: [Int]) {
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             
             pc_abilityScores = AbilityScoreList()
             pc_abilityScores!.generateAbilityScores(newScores)
@@ -64,7 +67,7 @@ class PlayerCharacter: Object {
     
     func setBaseSkills() {
         
-        try! Manager.instance._charactersRealm.write {
+        try! realm!.write {
             pc_skills = SkillList()
             pc_skills!.generateBaseSkillList()
             for skill in pc_skills!.skills {
@@ -76,31 +79,51 @@ class PlayerCharacter: Object {
         }
     }
     
-    func modifySkill(skillToModify: String, byAmount: Int) {
+    func setEmptyFeatsList() {
         
-        try! Manager.instance._charactersRealm.write {
-            
-            pc_skills!.modifySkill(skillToModify, amountToModify: byAmount, isClassSkill: isClassSkill(skillToModify))
-            pc_skills!.numRanks += byAmount
-            
+        try! realm!.write {
+            pc_feats = FeatsList()
         }
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // HELPER FUNCTIONS
+    func addFeat() {
+        
+        try! realm!.write {
+            pc_feats!.addTestFeat()
+        }
+    }
+    
+    func modifySkill(skillToModify: String, byAmount: Int) {
+        
+        try! realm!.write {
+            
+            pc_skills!.modifySkill(skillToModify, amountToModify: byAmount, isClassSkill: isClassSkill(skillToModify))
+            pc_skills!.numRanks += byAmount
+        }
+    }
+    
     func isClassSkill(skillToCheck: String) -> Bool {
         
         var classesArray: [String]
         
-        let skill = pc_skills!.getSkill(skillToCheck).skillsEnum()
-        classesArray = skill.classesFavoringSkill()
+        let skill = pc_skills!.findSkillWithName(skillToCheck).skillsEnum()
+        classesArray = skill!.classesFavoringSkill()
         
         for className in classesArray {
             if pc_class == className {
                 return true
             }
         }
-        
-        
         return false
     }
 }

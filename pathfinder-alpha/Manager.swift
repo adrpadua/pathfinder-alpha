@@ -14,22 +14,22 @@ class Manager {
     static var instance = Manager()
     
     var active_pc: PlayerCharacter?
-    var _charactersRealm: Realm
+    var realm: Realm
     
     var characters: Results<PlayerCharacter> {
-        return _charactersRealm.objects(PlayerCharacter)
+        return realm.objects(PlayerCharacter)
     }
     
     
     init() {
         var config = Realm.Configuration.defaultConfiguration
-        config.schemaVersion = 13
+        config.schemaVersion = 16
         
-        _charactersRealm = try! Realm(configuration: config)
+        realm = try! Realm(configuration: config)
         
         loadCharacters()
         
-        let dir = _charactersRealm.configuration.fileURL!
+        let dir = realm.configuration.fileURL!
         print(dir)
     }
     
@@ -39,19 +39,18 @@ class Manager {
     }
     
     func saveActiveCharacter() {
-        try! _charactersRealm.write {
-            _charactersRealm.add(active_pc!)
+        try! realm.write {
+            realm.add(active_pc!)
         }
     }
     
-    
     func loadCharacters() {
-        _charactersRealm.refresh()
+        realm.refresh()
     }
     
     func clearAllData() {
-        try! _charactersRealm.write {
-            _charactersRealm.deleteAll()
+        try! realm.write {
+            realm.deleteAll()
         }
     }
     
