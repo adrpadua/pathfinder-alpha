@@ -34,6 +34,8 @@ enum Ability: Int {
 
 class AbilityScoreList: Object {
     
+    dynamic var parentPlayerCharacter: PlayerCharacter?
+    
     let abilityScores = List<AbilityScore>()
     
     func generateAbilityScores(scores: [Int]) {
@@ -42,7 +44,7 @@ class AbilityScoreList: Object {
             
             for index in 1...6 {
                 let name = Ability(rawValue:  index)?.name()
-                let ability = AbilityScore(name: name!, value: scores[index - 1])
+                let ability = AbilityScore(name: name!, value: scores[index - 1], parentList: self)
                 abilityScores.append(ability)
             }
             
@@ -64,11 +66,13 @@ class AbilityScore: Object {
     dynamic var name = ""
     dynamic var value = 10
     dynamic var modifier = 0
+    dynamic var parentList: AbilityScoreList?
     
-    convenience init(name: String, value: Int) {
+    convenience init(name: String, value: Int, parentList: AbilityScoreList) {
         self.init()
         self.name = name
         self.value = value
+        self.parentList = parentList
         refreshModifier()
     }
     

@@ -11,6 +11,8 @@ import RealmSwift
 
 class FeatsList: Object {
     
+    dynamic var parentPlayerCharacter: PlayerCharacter?
+    
     let feats = List<Feat>()
     
     func findFeatWithName(name: String) -> Feat? {

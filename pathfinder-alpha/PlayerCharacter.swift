@@ -59,16 +59,19 @@ class PlayerCharacter: Object {
     
     func setAbilityScores(newScores: [Int]) {
         try! realm!.write {
-            
             pc_abilityScores = AbilityScoreList()
+            pc_abilityScores!.parentPlayerCharacter = self
             pc_abilityScores!.generateAbilityScores(newScores)
         }
     }
     
     func setBaseSkills() {
         
+        // TODO: Move all this into the SkillList class
+        
         try! realm!.write {
             pc_skills = SkillList()
+            pc_skills!.parentPlayerCharacter = self
             pc_skills!.generateBaseSkillList()
             for skill in pc_skills!.skills {
                 let abil = skill.keyAbility // "STR"
@@ -83,6 +86,7 @@ class PlayerCharacter: Object {
         
         try! realm!.write {
             pc_feats = FeatsList()
+            pc_feats!.parentPlayerCharacter = self
         }
     }
     

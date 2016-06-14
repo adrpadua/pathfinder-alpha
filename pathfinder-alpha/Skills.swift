@@ -283,6 +283,7 @@ enum Skills: Int {
 class SkillList: Object {
     
     dynamic var numRanks = 0
+    dynamic var parentPlayerCharacter: PlayerCharacter?
     
     let skills = List<Skill>()
     
@@ -301,7 +302,7 @@ class SkillList: Object {
     
     func addSkill(name: String, ranks: Int, ability: Ability) {
         
-        let skill = Skill(name: name, ranks: ranks, ability: ability)
+        let skill = Skill(name: name, ranks: ranks, ability: ability, parentList: self)
         skills.append(skill)
         numRanks += ranks
         
@@ -331,11 +332,14 @@ class Skill: Object {
     dynamic var ranks = 0
     dynamic var total = 0
     
-    convenience init(name: String, ranks: Int, ability: Ability) {
+    dynamic var parentList: SkillList?
+    
+    convenience init(name: String, ranks: Int, ability: Ability, parentList: SkillList) {
         self.init()
         self.name = name
         self.ranks = ranks
         self.keyAbility = ability.name()
+        self.parentList = parentList
     }
     
     func addRanks(num: Int) {

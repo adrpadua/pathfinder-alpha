@@ -105,6 +105,7 @@
 		A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaUITests.swift; sourceTree = "<group>"; };
 		A0C2806F1D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FF00011D10A99A0012BFD1 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = Realm/default.realm; sourceTree = SOURCE_ROOT; };
 		A0FFFFEC1D0FA61D0012BFD1 /* Feats_PFSRD_Core.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Feats_PFSRD_Core.csv; sourceTree = "<group>"; };
 		A0FFFFEE1D0FA62A0012BFD1 /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 		A0FFFFEF1D0FA62A0012BFD1 /* Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
@@ -227,6 +228,7 @@
 		A0C280491D012547008D2DF9 /* pathfinder-alpha */ = {
 			isa = PBXGroup;
 			children = (
+				A0FF00011D10A99A0012BFD1 /* default.realm */,
 				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
 				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
 				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,

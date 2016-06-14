@@ -14,6 +14,7 @@ class Manager {
     static var instance = Manager()
     
     var active_pc: PlayerCharacter?
+    
     var realm: Realm
     
     var characters: Results<PlayerCharacter> {
@@ -22,8 +23,10 @@ class Manager {
     
     
     init() {
-        var config = Realm.Configuration.defaultConfiguration
-        config.schemaVersion = 16
+        
+        let URL: NSURL = NSURL(string: "file:///Users/adrpadua/xCodeProjects/pathfinder-alpha/Realm/default.realm")!
+        var config = Realm.Configuration(fileURL: URL)
+        config.schemaVersion = 20
         
         realm = try! Realm(configuration: config)
         
