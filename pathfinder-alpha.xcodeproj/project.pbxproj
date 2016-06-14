@@ -265,7 +265,6 @@
 				A0C280451D012547008D2DF9 /* Resources */,
 				4A09038C9CEC37264AC206C2 /* 📦 Embed Pods Frameworks */,
 				1341B8CED4CE6670C49DAE01 /* 📦 Copy Pods Resources */,
-				A02AF80A1D05F48F002F724B /* ShellScript */,
 				A0833CE41D0E9062002C5A67 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -448,19 +447,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pathfinder-alphaTests/Pods-pathfinder-alphaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		A02AF80A1D05F48F002F724B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
 		};
 		A93C660AA73BDB1C5E6B73BC /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
