@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'pathfinder-alpha' do
 	pod 'RealmSwift'
+	pod 'SwiftyJSON'
 end
 
 target 'pathfinder-alphaTests' do

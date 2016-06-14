@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-pathfinder-alpha/Realm.framework"
   install_framework "Pods-pathfinder-alpha/RealmSwift.framework"
+  install_framework "Pods-pathfinder-alpha/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-pathfinder-alpha/Realm.framework"
   install_framework "Pods-pathfinder-alpha/RealmSwift.framework"
+  install_framework "Pods-pathfinder-alpha/SwiftyJSON.framework"
 fi
