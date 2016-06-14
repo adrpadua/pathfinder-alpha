@@ -41,11 +41,20 @@
                                     <action selector="clearDataBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KRY-t4-VMJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEn-Wp-8fX">
+                                <rect key="frame" x="264" y="399" width="73" height="30"/>
+                                <state key="normal" title="Test JSON"/>
+                                <connections>
+                                    <action selector="JSONBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxZ-Ev-9pg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BEn-Wp-8fX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DWe-8U-hUi"/>
                             <constraint firstItem="9sW-AL-NL3" firstAttribute="top" secondItem="OJq-3n-FM4" secondAttribute="bottom" constant="8" id="Lla-qT-Psy"/>
                             <constraint firstItem="Jce-vO-6y2" firstAttribute="top" secondItem="9sW-AL-NL3" secondAttribute="bottom" constant="8" id="cnu-IQ-5Ru"/>
+                            <constraint firstItem="BEn-Wp-8fX" firstAttribute="top" secondItem="Jce-vO-6y2" secondAttribute="bottom" constant="8" id="fyJ-Ov-KiG"/>
                             <constraint firstItem="9sW-AL-NL3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0S-tu-yTS"/>
                             <constraint firstItem="Jce-vO-6y2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hO8-nB-BQ1"/>
                             <constraint firstItem="OJq-3n-FM4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iWX-aC-G13"/>
@@ -161,7 +170,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OeM-cR-6S9" id="XOp-Q6-RB9">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFb-SV-ZEL">

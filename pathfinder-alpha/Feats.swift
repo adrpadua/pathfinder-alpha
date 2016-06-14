@@ -9,6 +9,10 @@
 import Foundation
 import RealmSwift
 
+class FeatsDB {
+    
+}
+
 class FeatsList: Object {
     
     dynamic var parentPlayerCharacter: PlayerCharacter?

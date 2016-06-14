@@ -44,6 +44,10 @@ class StartVC: UIViewController {
         print(Manager.instance.active_pc!)
     }
     
+    @IBAction func JSONBtnPressed(sender: UIButton) {
+        
+    }
+    
     @IBAction func clearDataBtnPressed(sender: UIButton) {
         Manager.instance.clearAllData()
         print("Character database cleared.")
