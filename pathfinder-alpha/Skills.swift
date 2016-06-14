@@ -296,13 +296,19 @@ class SkillList: Object {
         for index in 1...numSkills {
             let skillName = Skills(rawValue: index)?.name()
             let keyAbility = Skills(rawValue: index)?.keyAbility()
-            addSkill(skillName!, ranks: 0, ability: keyAbility!)
+            
+            // Get AbilityScore from parent PC
+            let charAbility = parentPlayerCharacter!.pc_abilityScores!.findAbilityWithName(keyAbility!.name())
+            
+            addSkill(skillName!, ranks: 0, ability: keyAbility!, charAbilMod: charAbility.modifier)
         }
     }
     
-    func addSkill(name: String, ranks: Int, ability: Ability) {
+    func addSkill(name: String, ranks: Int, ability: Ability, charAbilMod: Int) {
         
-        let skill = Skill(name: name, ranks: ranks, ability: ability, parentList: self)
+        let skill = Skill(name: name, ranks: ranks, ability: ability)
+        skill.baseValue = charAbilMod
+        skill.refreshTotal()
         skills.append(skill)
         numRanks += ranks
         
@@ -332,14 +338,11 @@ class Skill: Object {
     dynamic var ranks = 0
     dynamic var total = 0
     
-    dynamic var parentList: SkillList?
-    
-    convenience init(name: String, ranks: Int, ability: Ability, parentList: SkillList) {
+    convenience init(name: String, ranks: Int, ability: Ability) {
         self.init()
         self.name = name
         self.ranks = ranks
         self.keyAbility = ability.name()
-        self.parentList = parentList
     }
     
     func addRanks(num: Int) {

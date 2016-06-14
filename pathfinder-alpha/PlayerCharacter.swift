@@ -67,18 +67,10 @@ class PlayerCharacter: Object {
     
     func setBaseSkills() {
         
-        // TODO: Move all this into the SkillList class
-        
         try! realm!.write {
             pc_skills = SkillList()
             pc_skills!.parentPlayerCharacter = self
             pc_skills!.generateBaseSkillList()
-            for skill in pc_skills!.skills {
-                let abil = skill.keyAbility // "STR"
-                let charAbilMod = pc_abilityScores!.abilityScores.filter("name == %@", "\(abil)")[0].modifier // "STR"
-                skill.baseValue = charAbilMod
-                skill.refreshTotal()
-            }
         }
     }
     

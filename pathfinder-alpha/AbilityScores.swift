@@ -38,13 +38,18 @@ class AbilityScoreList: Object {
     
     let abilityScores = List<AbilityScore>()
     
+    func findSkillWithName(name: String) -> AbilityScore {
+        let ability = abilityScores.filter("name == %@", "\(name)")[0]
+        return ability
+    }
+    
     func generateAbilityScores(scores: [Int]) {
         
         if scores.count == 6 {
             
             for index in 1...6 {
                 let name = Ability(rawValue:  index)?.name()
-                let ability = AbilityScore(name: name!, value: scores[index - 1], parentList: self)
+                let ability = AbilityScore(name: name!, value: scores[index - 1])
                 abilityScores.append(ability)
             }
             
@@ -66,13 +71,11 @@ class AbilityScore: Object {
     dynamic var name = ""
     dynamic var value = 10
     dynamic var modifier = 0
-    dynamic var parentList: AbilityScoreList?
     
-    convenience init(name: String, value: Int, parentList: AbilityScoreList) {
+    convenience init(name: String, value: Int) {
         self.init()
         self.name = name
         self.value = value
-        self.parentList = parentList
         refreshModifier()
     }
     
