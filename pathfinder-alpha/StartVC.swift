@@ -38,7 +38,8 @@ class StartVC: UIViewController {
             character.setBaseSkills()
             character.modifySkill("Disguise", byAmount: 1)
             character.setEmptyFeatsList()
-            character.addFeat()
+            character.addFeat("Acrobatic")
+            character.addFeat("Shatter Defenses")
         }
         
         print(Manager.instance.active_pc!)

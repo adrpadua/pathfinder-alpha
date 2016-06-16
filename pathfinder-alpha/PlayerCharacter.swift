@@ -92,10 +92,10 @@ class PlayerCharacter: Object {
     
     
     // HELPER FUNCTIONS
-    func addFeat() {
+    func addFeat(featName: String) {
         
         try! realm!.write {
-            pc_feats!.addTestFeat()
+            pc_feats!.addFeat(featName)
         }
     }
     
