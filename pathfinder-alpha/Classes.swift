@@ -41,7 +41,20 @@ enum Classes: String {
         case .Wizard:
             return true
         }
+    }
+    
+    func hitDie() -> Int {
         
+        switch self {
+        case .Cleric:
+            return 8
+        case .Fighter:
+            return 10
+        case .Rogue:
+            return 8
+        case .Wizard:
+            return 6
+        }
     }
 }
 

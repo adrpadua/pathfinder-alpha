@@ -75,6 +75,9 @@ class AbilityScore: Object {
     convenience init(name: String, value: Int) {
         self.init()
         self.name = name
+        
+        // Set value according to racial choice
+        partOfList.
         self.value = value
         refreshModifier()
     }

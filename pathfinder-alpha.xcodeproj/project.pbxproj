@@ -23,6 +23,9 @@
 		A0833CE21D0E9062002C5A67 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */; };
 		A0833CE31D0E9062002C5A67 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A091FA621D10CE7D00C61E3D /* Feats_PFRPG_Core.json in Resources */ = {isa = PBXBuildFile; fileRef = A091FA611D10CE7D00C61E3D /* Feats_PFRPG_Core.json */; };
+		A091FA641D10D08D00C61E3D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A091FA631D10D08D00C61E3D /* SwiftyJSON.framework */; };
+		A091FA671D10E55000C61E3D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = A091FA661D10E55000C61E3D /* default.realm */; };
+		A0BB935F1D1235FB00FCA996 /* Spells_PFRPG_Core.json in Resources */ = {isa = PBXBuildFile; fileRef = A0BB935E1D1235FB00FCA996 /* Spells_PFRPG_Core.json */; };
 		A0C2804B1D012547008D2DF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804A1D012547008D2DF9 /* AppDelegate.swift */; };
 		A0C2804D1D012547008D2DF9 /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2804C1D012547008D2DF9 /* StartVC.swift */; };
 		A0C280501D012547008D2DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2804E1D012547008D2DF9 /* Main.storyboard */; };
@@ -86,6 +89,9 @@
 		A0833CDE1D0E9062002C5A67 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		A0833CDF1D0E9062002C5A67 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A091FA611D10CE7D00C61E3D /* Feats_PFRPG_Core.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feats_PFRPG_Core.json; sourceTree = "<group>"; };
+		A091FA631D10D08D00C61E3D /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/pathfinder-alpha-bbkimuvrwihhysdwfjkfgbksolmq/Build/Products/Debug-iphonesimulator/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		A091FA661D10E55000C61E3D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = Realm/default.realm; sourceTree = SOURCE_ROOT; };
+		A0BB935E1D1235FB00FCA996 /* Spells_PFRPG_Core.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spells_PFRPG_Core.json; sourceTree = "<group>"; };
 		A0C280471D012547008D2DF9 /* pathfinder-alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pathfinder-alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2804A1D012547008D2DF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2804C1D012547008D2DF9 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
@@ -100,7 +106,6 @@
 		A0C280691D012547008D2DF9 /* pathfinder-alphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pathfinder-alphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2806D1D012547008D2DF9 /* pathfinder_alphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pathfinder_alphaUITests.swift; sourceTree = "<group>"; };
 		A0C2806F1D012547008D2DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0FF00011D10A99A0012BFD1 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = Realm/default.realm; sourceTree = SOURCE_ROOT; };
 		A0FFFFFB1D10749B0012BFD1 /* Spellcaster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spellcaster.swift; sourceTree = "<group>"; };
 		A0FFFFFD1D1075150012BFD1 /* Feats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feats.swift; sourceTree = "<group>"; };
 		AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pathfinder_alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A091FA641D10D08D00C61E3D /* SwiftyJSON.framework in Frameworks */,
 				A0833CE01D0E9062002C5A67 /* Realm.framework in Frameworks */,
 				D6B3C9C5A8D0F35EE9CDE414 /* Pods_pathfinder_alpha.framework in Frameworks */,
 				A0833CE21D0E9062002C5A67 /* RealmSwift.framework in Frameworks */,
@@ -142,6 +148,7 @@
 		506F63EEA021B603BC865271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A091FA631D10D08D00C61E3D /* SwiftyJSON.framework */,
 				AD28D66F56A80E61E79EAE20 /* Pods_pathfinder_alpha.framework */,
 				3B0C8C58FEE2273DBECBD707 /* Pods_pathfinder_alphaTests.framework */,
 				75A339AC3E9B3C93CA080EBD /* Pods_pathfinder_alphaUITests.framework */,
@@ -216,7 +223,7 @@
 		A0C280491D012547008D2DF9 /* pathfinder-alpha */ = {
 			isa = PBXGroup;
 			children = (
-				A0FF00011D10A99A0012BFD1 /* default.realm */,
+				A091FA661D10E55000C61E3D /* default.realm */,
 				A0C2804A1D012547008D2DF9 /* AppDelegate.swift */,
 				A0C2804E1D012547008D2DF9 /* Main.storyboard */,
 				A0C280561D012547008D2DF9 /* LaunchScreen.storyboard */,
@@ -254,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				A091FA611D10CE7D00C61E3D /* Feats_PFRPG_Core.json */,
+				A0BB935E1D1235FB00FCA996 /* Spells_PFRPG_Core.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -385,10 +393,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A091FA671D10E55000C61E3D /* default.realm in Resources */,
 				A0C280581D012547008D2DF9 /* LaunchScreen.storyboard in Resources */,
 				A0C280551D012547008D2DF9 /* Assets.xcassets in Resources */,
 				A091FA621D10CE7D00C61E3D /* Feats_PFRPG_Core.json in Resources */,
 				A0C280501D012547008D2DF9 /* Main.storyboard in Resources */,
+				A0BB935F1D1235FB00FCA996 /* Spells_PFRPG_Core.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
